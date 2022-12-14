@@ -1,0 +1,32 @@
+.features {
+	padding-bottom: 0;
+	.features-list {
+		display: flex;
+		gap: 30px;
+	}
+
+	.features-wrap {
+		display: flex;
+		width: 270px;
+		height: 120px;
+		background-color: var(--background-section);
+		align-items: center;
+		justify-content: center;
+		border-radius: 4px;
+		margin-bottom: 30px;
+	}
+
+	.features-title {
+		color: var(--primary-text-color);
+		font-size: 14px;
+		line-height: 1.14px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+
+	.features-text {
+		color: var(--ouwer-text-color);
+		line-height: 1.71;
+		margin-top: 10px;
+	}
+}
