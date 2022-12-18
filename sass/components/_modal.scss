@@ -5,8 +5,13 @@
 
 	transform: translate(-50%, -50%);
 
-	width: 528px;
-	height: 581px;
+	width: 450px;
+	height: 609px;
+
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
 
 	border-radius: 4px;
 	background: var(--background-color);
@@ -14,6 +19,7 @@
 
 	padding: 40px;
 }
+
 .modal-close {
 	position: absolute;
 	display: flex;
@@ -41,6 +47,11 @@
 		fill: var(--acent-color);
 		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	}
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
 }
 
 .title-modal {

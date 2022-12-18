@@ -2,12 +2,40 @@
 	color: var(--logo-color-text);
 	font-family: "Raleway";
 	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	margin-right: 93px;
-	padding-top: 24px;
-	padding-bottom: 25px;
+	font-size: 24px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	text-align: center;
+	// padding-top: 16px;
+	// padding-bottom: 16px;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		line-height: 1.19;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
 	&__word {
 		color: var(--acent-color);
 	}
+}
+
+.footer-logo {
+	color: var(--secondary-text-color);
+	font-family: "Raleway";
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1.7;
+	letter-spacing: 0.03em;
+	text-align: center;
+
+	@media screen and (min-width: 1200px) {
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1.19;
+	}
+}
+
+.footer-word {
+	color: var(--acent-color);
 }

@@ -26,14 +26,14 @@
 		<!-- Шапка сайта -->
 
 		<header class="header">
-			<div class="container header__container">
+			<div class="header__container">
 				<nav class="navigation">
 					<a href="./index.html" class="logo">
 						<span class="logo__word">Web</span>Studio
 					</a>
 					<ul class="menu list">
-						<li class="menu__item"><a class="menu__link current" href="./index.html">Студія</a></li>
-						<li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
+						<li class="menu__item first-item"><a class="menu__link  current" href="./index.html">Студія</a></li>
+						<li class="menu__item second-item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
 						<li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
 					</ul>
 				</nav>
@@ -48,7 +48,7 @@
 						</a>
 					</li>
 					<li class="header__item">
-						<a class="header__link" href="tel:+380961111111">
+						<a class="header__link tel" href="tel:+380961111111">
 							<svg class="header__icon" width="10" height="16">
 								<use href="./images/symbol-defs.svg#icon-smartphone"></use>
 							</svg>
@@ -56,6 +56,47 @@
 						</a>
 					</li>
 				</ul>
+				<button type="button" class="open-btn" data-menu-open>
+					<svg class="open-btn-icon" width="40" height="40">
+						<use href="./images/symbol-defs.svg#icon-menu"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="mob-menu is-hidden" data-menu>
+				<div class="container visible">
+					<div class="mob-menu-top">
+						<button type="button" class="close-btn" data-menu-close>
+							<svg class="close-btn-icon" width="40" height="40">
+								<use href="./images/symbol-defs.svg#icon-close"></use>
+							</svg>
+						</button>
+						<nav class="mob-navigation">
+							<ul class="mob-menu-list list">
+								<li class="mob-menu-item"><a class="mob-menu-link current" href="./index.html">Студія</a></li>
+								<li class="mob-menu-item"><a class="mob-menu-link" href="./portfolio.html">Портфоліо</a></li>
+								<li class="mob-menu-item"><a class="mob-menu-link" href="#">Контакти</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="mob-menu-bottom">
+						<a class="mob-menu-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+						<a class="mob-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<ul class="mob-soc-list list">
+							<li class="mob-soc-item">
+								<a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
+							</li>
+							<li class="mob-soc-item">
+								<a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>
+							</li>
+							<li class="mob-soc-item">
+								<a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+							</li>
+							<li class="mob-soc-item">
+								<a class="mob-soc-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Linkedin</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</header>
 
@@ -125,15 +166,40 @@
 					<h2 class="work__title title">Чим ми займаємося</h2>
 					<ul class="work__list">
 						<li class="work__item">
-							<img src="./images/index/box1.jpg" alt="чоловік працює за комп'ютером" width="370" />
+							<picture>
+								<source
+									srcset="./images/job/photo1.jpg 1x, ./images/job/photo1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/job/photo1.jpg 1x, ./images/job/photo1-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/job/photo1.jpg 1x, ./images/job/photo1-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images/index/box1.jpg" alt="чоловік працює за комп'ютером" width="370" />
+							</picture>
 							<p class="work__content">Десктопні додатки</p>
 						</li>
+
 						<li class="work__item">
-							<img src="./images//index/box2.jpg" alt="дівчина з ноутбуком" width="370" />
+							<picture>
+								<source
+									srcset="./images/job/photo2.jpg 1x, ./images/job/photo2-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/job/photo2.jpg 1x, ./images/job/photo2-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/job/photo2.jpg 1x, ./images/job/photo2-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/box2.jpg" alt="дівчина з ноутбуком" width="370" />
+							</picture>
 							<p class="work__content">Мобільні додатки</p>
 						</li>
 						<li class="work__item">
-							<img src="./images//index/box3.jpg" alt="дівчина з планшетом" width="370" />
+							<picture>
+								<source
+									srcset="./images/job/photo3.jpg 1x, ./images/job/photo3-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/job/photo3.jpg 1x, ./images/job/photo3-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/job/photo3.jpg 3x, ./images/job/photo3-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/box3.jpg" alt="дівчина з планшетом" width="370" />
+							</picture>
 							<p class="work__content">Дизайнерські рішення</p>
 						</li>
 					</ul>
@@ -147,7 +213,15 @@
 					<h2 class="team__title title">Наша команда</h2>
 					<ul class="team__list">
 						<li class="team__item">
-							<img src="./images//index/img1.jpg" alt="чоловік в окулярах" width="270" />
+							<picture>
+								<source
+									srcset="./images/team/crew1.jpg 1x, ./images/team/crew1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/team/crew1.jpg 1x, ./images/team/crew1-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/team/crew1.jpg 3x, ./images/team/crew1-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/img1.jpg" alt="чоловік в окулярах" width="450" />
+							</picture>
 							<h3 class="team__name">Ігор Дем'яненко</h3>
 							<p lang="en" class="team__work">Product Designer</p>
 							<ul class="social list">
@@ -182,7 +256,15 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img src="./images//index/img2.jpg" alt=" красива жінка" width="270" />
+							<picture>
+								<source
+									srcset="./images/team/crew2.jpg 1x, ./images/team/crew2-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/team/crew2.jpg 1x, ./images/team/crew2-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/team/crew2.jpg 3x, ./images/team/crew2-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/img2.jpg" alt=" красива жінка" width="450" />
+							</picture>
 							<h3 class="team__name">Ольга Рєпіна</h3>
 							<p lang="en" class="team__work">Frontend Developer</p>
 							<ul class="social list">
@@ -217,7 +299,15 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img src="./images//index/img3.jpg" alt="усміхнений хлопець" width="270" />
+							<picture>
+								<source
+									srcset="./images/team/crew3.jpg 1x, ./images/team/crew3-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/team/crew3.jpg 1x, ./images/team/crew3-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/team/crew3.jpg 3x, ./images/team/crew3-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/img3.jpg" alt="усміхнений хлопець" width="450" />
+							</picture>
 							<h3 class="team__name">Микола Тарасов</h3>
 							<p lang="en" class="team__work">Marketing</p>
 							<ul class="social list">
@@ -252,7 +342,15 @@
 							</ul>
 						</li>
 						<li class="team__item">
-							<img src="./images//index/img4.jpg" alt="молодий чоловік з бородою" width="270" />
+							<picture>
+								<source
+									srcset="./images/team/crew4.jpg 1x, ./images/team/crew4-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source srcset="./images/team/crew4.jpg 1x, ./images/team/crew4-2x.jpg 2x" media="(min-width: 768px)" />
+								<source srcset="./images/team/crew4.jpg 3x, ./images/team/crew4-2x.jpg 2x" media="(max-width: 767px)" />
+								<img src="./images//index/img4.jpg" alt="молодий чоловік з бородою" width="450" />
+							</picture>
 							<h3 class="team__name">Михайло Єрмаков</h3>
 							<p lang="en" class="team__work">UI Designer</p>
 							<ul class="social list">
@@ -349,7 +447,8 @@
 			<div class="container footer-flex">
 				<div class="footer-nav">
 					<a href="./index.html" class="footer-logo">
-						<span class="footer-word">Web</span>Studio
+						<span class="footer-word">Web</span>
+						Studio
 					</a>
 					<address class="footer-contact">
 						<ul class="footer-list">
@@ -417,6 +516,7 @@
 				</form>
 			</div>
 		</footer>
+		-->
 		<div data-modal class="backdrop is-hidden">
 			<div class="modal">
 				<button type="button" class="modal-close">
@@ -470,6 +570,6 @@
 			</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>
-<!-- text-decoration-skip-ink: none; -->

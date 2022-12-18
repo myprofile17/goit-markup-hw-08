@@ -1,13 +1,25 @@
 .features {
-	padding-bottom: 0;
+	// padding-bottom: 0;
 	.features-list {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
+	}
+
+	.features-item {
+		width: 100%;
+		@include tablet {
+			@include calc(2, 30px);
+		}
+		@include desktop {
+			@include calc(4, 30px);
+		}
 	}
 
 	.features-wrap {
 		display: flex;
-		width: 270px;
+		flex-wrap: wrap;
+		width: 100%;
 		height: 120px;
 		background-color: var(--background-section);
 		align-items: center;
