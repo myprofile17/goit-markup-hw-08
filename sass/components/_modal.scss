@@ -5,8 +5,6 @@
 
 	transform: translate(-50%, -50%);
 
-	width: 450px;
-	height: 609px;
 
 	@media screen and (min-width: 1200px) {
 		width: 528px;
@@ -153,15 +151,12 @@
 	letter-spacing: 0.03em;
 	color: var(--ouwer-text-color);
 	@media screen and (min-width: 1200px) {
-		// 	display: flex;
-		// align-items: center;
+
 		flex-wrap: wrap;
 		margin-top: 20px;
-		// font-style: normal;
-		// font-weight: normal;
 		font-size: 14px;
 		line-height: 1.71;
-		// letter-spacing: 0.03em;
+
 	}
 	&::before {
 		content: "";
