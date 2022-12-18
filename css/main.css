@@ -289,14 +289,22 @@ a {
 .modal-form-policy {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--ouwer-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-policy {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .modal-form-policy::before {
   content: "";
