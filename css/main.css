@@ -419,8 +419,11 @@ header {
 @media screen and (min-width: 768px) {
   .header__container {
     height: 80px;
-    padding-left: 15px;
-    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    height: 80px;
   }
 }
 
